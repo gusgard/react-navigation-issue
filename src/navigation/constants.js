@@ -1,0 +1,26 @@
+// name of this modules
+export const NAME = 'navigation';
+
+// action types
+export const CREATE = `${NAME}/CREATE`;
+export const CREATE_INVITATION = `${NAME}/CREATE_INVITATION`;
+export const CREATE_MAP = `${NAME}/CREATE_MAP`;
+export const CREATE_REVIEW = `${NAME}/CREATE_REVIEW`;
+export const CREATE_WIZARD = `${NAME}/CREATE_WIZARD`;
+export const DASHBOARD = `${NAME}/DASHBOARD`;
+export const GROUP_SETTINGS = `${NAME}/GROUP_SETTINGS`;
+export const HOME_WELCOME = `${NAME}/HOME_WELCOME`;
+export const HOME_REGISTER = `${NAME}/HOME_REGISTER`;
+export const HOME_VALIDATION = `${NAME}/HOME_VALIDATION`;
+export const HOME_PROFILE = `${NAME}/HOME_PROFILE`;
+export const LOADING = `${NAME}/LOADING`;
+export const DASHBOARD_LIST = `${NAME}/DASHBOARD_LIST`;
+export const DASHBOARD_SKED_REVIEW = `${NAME}/DASHBOARD_SKED_REVIEW`;
+export const DASHBOARD_VOTE_MAP = `${NAME}/DASHBOARD_VOTE_MAP`;
+export const DASHBOARD_SKED_VOTE = `${NAME}/DASHBOARD_SKED_VOTE`;
+export const DASHBOARD_SKED_VOTE_CHANGE = `${NAME}/DASHBOARD_SKED_VOTE_CHANGE`;
+export const DASHBOARD_SKED = `${NAME}/DASHBOARD_SKED`;
+export const HOME_LEGAL_PRIVACY = `${NAME}/HOME_LEGAL_PRIVACY`;
+export const CREATE_RESET_NAVIGATION = `${NAME}/CREATE_RESET_NAVIGATION`;
+
+export const HOME = `${NAME}/HOME`;
