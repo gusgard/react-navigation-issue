@@ -1,7 +1,0 @@
-windows:
-  - name: skedler-mobile-panels
-    root: ./
-    layout: even-horizontal
-    panes:
-      - git status && yarn start
-      - yarn ios && yarn lint

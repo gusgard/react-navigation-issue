@@ -3,12 +3,9 @@ import { StackNavigator } from 'react-navigation';
 
 import TabNavigation from './TabNavigation';
 
-// import { LOADING } from './constants';
-
 const RouteConfigs = {
   TabNavigation: {
     screen: TabNavigation
-    // navigationOptions: () => ({})
   }
 };
 const StackNavigatorConfig = {

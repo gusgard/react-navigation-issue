@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { View, Text, TouchableHighlight } from 'react-native';
 
-import * as navigation from 'Skedler/src/navigation/actions';
+import * as navigation from '../../navigation/actions';
 
 class Creation extends Component {
   static propTypes = {

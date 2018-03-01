@@ -33,9 +33,9 @@ const RouteConfigs = {
 };
 
 const TabNavigatorConfig = {
-  // initialRouteName: HOME,
-  // tabBarPosition: 'bottom', // Android
-  // swipeEnabled: false // Android
+  // initialRouteName: CREATE,
+  tabBarPosition: 'bottom', // Android
+  swipeEnabled: false // Android
   // lazy: true,
 };
 

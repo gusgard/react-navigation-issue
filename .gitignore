@@ -46,16 +46,8 @@ buck-out/
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
 # screenshots whenever they are needed.
 # For more information about the recommended setup visit:
-# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+# https://docs.fastlane.tools/best-practices/source-control/
 
-ios/fastlane/report.xml
-ios/fastlane/Preview.html
-ios/fastlane/screenshots
-ios/Skedler.app.dSYM.zip
-src/config/ip-config.js
-src/config/s3.config.js
-android/app/src/main/assets/crashlytics-build.properties
-android/app/src/main/res/values/com_crashlytics_export_strings.xml
-.env
-GooglePlayAndroidDeveloper.json
-android/fastlane/report.xml
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots

@@ -27,29 +27,9 @@ export default handleActions(
       generateNavigationAction(state, routeName),
 
     [NavigationActions.BACK]: state => {
-      // Keyboard.dismiss();
       const nextState = getStateForAction(NavigationActions.back(), state);
       return nextState || state;
     }
-    // [NavigationActions.INIT]: state => {
-    //   console.error(NavigationActions.INIT);
-    //   return state;
-    // },
-    // [NavigationActions.RESET]: state => {
-    //   console.error(NavigationActions.RESET);
-    //   return state;
-    // },
-    // [NavigationActions.SET_PARAMS]: (state, { key, params }) => {
-    //   const nextState = getStateForAction(
-    //     NavigationActions.setParams({ params, key }),
-    //     state
-    //   );
-    //   return nextState || state;
-    // },
-    // [NavigationActions.URI]: state => {
-    //   console.error(NavigationActions.URI);
-    //   return state;
-    // }
   },
   initialState
 );
