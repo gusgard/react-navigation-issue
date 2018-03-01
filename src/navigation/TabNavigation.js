@@ -1,42 +1,63 @@
+import React from 'react';
 import { StackNavigator, TabNavigator } from 'react-navigation';
+import { Text, View } from 'react-native';
 
-import { HOME, CREATE, DASHBOARD, DASHBOARD_LIST } from './constants';
-import CreateNavigation from './CreateNavigation';
-import DashboardNavigation from './DashboardNavigation';
-import { dashboard } from '../pages';
+import { creation } from '../pages';
 
 const RouteConfigs = {
-  [DASHBOARD]: {
-    screen: DashboardNavigation,
-    navigationOptions: () => ({
-      header: null
-    })
-  },
-  [HOME]: {
-    screen: StackNavigator({
-      [DASHBOARD_LIST]: {
-        screen: dashboard,
-        navigationOptions: () => ({
-          title: 'B'
-        })
-      }
-    }),
-    navigationOptions: () => ({})
-  },
-  [CREATE]: {
-    screen: CreateNavigation,
-    navigationOptions: () => ({
-      tabBarVisible: false,
-      title: 'C'
-    })
-  }
+	MainA: {
+		screen: StackNavigator({
+			ScreenA: {
+				screen: () => (
+					<View>
+						<Text>A screen</Text>
+					</View>
+				),
+				navigationOptions: () => ({
+					title: 'A'
+				})
+			}
+		}),
+		navigationOptions: () => ({
+			header: null
+		})
+	},
+	MainB: {
+		screen: StackNavigator({
+			ScreenB: {
+				screen: () => (
+					<View>
+						<Text>B screen</Text>
+					</View>
+				),
+				navigationOptions: () => ({
+					title: 'B'
+				})
+			}
+		}),
+		navigationOptions: () => ({})
+	},
+	MainC: {
+		screen: StackNavigator({
+			ScreenC: {
+				screen: creation,
+				navigationOptions: () => ({
+					header: null
+				})
+			}
+		}),
+		navigationOptions: () => ({
+			tabBarVisible: false,
+			title: 'C'
+		})
+	}
 };
 
 const TabNavigatorConfig = {
-  // initialRouteName: CREATE,
-  tabBarPosition: 'bottom', // Android
-  swipeEnabled: false // Android
-  // lazy: true,
+	// initialRouteName: CREATE,
+	tabBarPosition: 'bottom', // Android
+	swipeEnabled: false // Android
+	// lazy: true,
 };
 
 export default TabNavigator(RouteConfigs, TabNavigatorConfig);
