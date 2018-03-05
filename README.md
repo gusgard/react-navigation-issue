@@ -2,7 +2,7 @@
 
 Fails selecting A -> B -> C
 
-![Demo](./demo.gif)
+![Demo](./demo2.gif)
 
 # 0.53.x
 
